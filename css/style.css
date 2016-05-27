@@ -1,0 +1,16 @@
+body#homepage {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+body#homepage header {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+}
+body#homepage header .container-fluid {
+  max-width: 1200px;
+  width: 75%;
+  margin: 0 auto;
+}
