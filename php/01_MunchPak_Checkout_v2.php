@@ -1605,7 +1605,7 @@ or just use your available accounts:
       </div>
 
 
-      <div id='screen'>
+      <div id='images'>
 
          <div class='scene s1 day'>
          </div>
@@ -1649,6 +1649,10 @@ or just use your available accounts:
       </div>
 
    </div>
+
+
+   <script type='text/javascript' src='./js/hieut.js'>
+   </script>
 
 </body>
 <?php  echo('</html>');?>
