@@ -1,409 +1,363 @@
 - include('head.php')
 %body{:id=>'checkout',:class=>'checkout'}
-   #screen.wrapper
-      #display
-         #frame1.deep1.active
-            .deep2
-               .content
-                  .top.title
-                     %h1 Let’s get Start
-                  .detail
-                     .col-xs-6
-                        %h2 How many snacks per box?
-                        %ul.labels.list
-                           %li.label.l1
-                              %a{:href=>'#'}
-                                 +5
-                                 %span snacks
-                           %li.label.l1.active
-                              %a{:href=>'#'}
-                                 +10
-                                 %span snacks
-                           %li.label.l1
-                              %a{:href=>'#'}
-                                 +20
-                                 %span snacks
-                     .col-xs-6
-                        %h2 Choose your delivery frequency
-                        %ul.times.list
-                           %li.time.t1
-                              %a{:href=>'#'}
-                                 weekly
-                           %li.time.t1.active
-                              %a{:href=>'#'}
-                                 every 2 weeks
-                           %li.time.t1
-                              %a{:href=>'#'}
-                                 monthly
-                  .control
-                     %a.border.btn.next{:href=>'#'} Next
-         #frame2.deep1
-            .deep2
-               .content
-                  .top.title
-                     %h1 Customize this package
-                     %p.min.text (optional for picky eaters or people with allergies)
-                  .detail
-                     %ul.labels.list
-                        %li.label.item
-                           .cycle Spicy
-                           %a.minu -
-                           %a.plus +
-                        %li.label.item
-                           .cycle Salty
-                           %a.minu -
-                           %a.plus +
-                        %li.label.item
-                           .cycle Sweet
-                           %a.minu -
-                           %a.plus +
-                        %li.label.item
-                           .cycle Sour
-                           %a.minu -
-                           %a.plus +
-                        %li.label.item
-                           .cycle Chewy
-                           %a.minu -
-                           %a.plus +
-                        %li.label.item
-                           .cycle Crunchy
-                           %a.minu -
-                           %a.plus +
-                        %li.label.item
-                           .cycle Gummy
-                           %a.minu -
-                           %a.plus +
-                        %li.label.item
-                           .cycle Seafood
-                           %a.minu -
-                           %a.plus +
-                        %li.label.item
-                           .cycle Nuts
-                           %a.minu -
-                           %a.plus +
-                        %li.label.item
-                           .cycle Meat
-                           %a.minu -
-                           %a.plus +
-                        %li.label.item
-                           .cycle Candy
-                           %a.minu -
-                           %a.plus +
-                        %li.label.item
-                           .cycle Chips
-                           %a.minu -
-                           %a.plus +
-                        %li.label.item
-                           .cycle Cookies
-                           %a.minu -
-                           %a.plus +
-                        %li.label.item
-                           .cycle Foreign Snacks
-                           %a.minu -
-                           %a.plus +
-                        %li.label.item
-                           .cycle Domestic Snacks
-                           %a.minu -
-                           %a.plus +
-                  .control
-                     %p Above Variables ($1 Each)
-                     %a.border.btn.down{:href=>'#'} v
-         #frame3.deep1
-            .deep2
-               .content
-                  .top.title
-                     %h1 Billing Address
-                     %p.min.text
-                        Already have an account?
-                        %a#quicklogin.min.red.btn{:href=>'#'}
-                           Sign in!
-                  .detail
-                     %form#billing_address
-                        .col-xs-6
-                           .inputs.line
-                              .input.object.left.text
-                                 %input{:type=>'textbox',:name=>'firstname',:value=>' '}
-                                 .label
-                                    First name
-                                    %p.red.req *
-                              .input.object.right.text
-                                 %input{:type=>'textbox',:name=>'lastname',:value=>' '}
-                                 .label
-                                    Last name
-                                    %p.red.req *
-                           .inputs.line
-                              .input.object.fit.text
-                                 %input{:type=>'textbox',:name=>'address',:value=>' '}
-                                 .label
-                                    Address
-                                    %p.red.req *
-                           .inputs.line
-                              .input.object.fit.text
-                                 %input{:type=>'textbox',:name=>'address2',:value=>' '}
-                                 .label
-                                    Address 2
-                           .inputs.line
-                              .input.object.left.text
-                                 %input{:type=>'textbox',:name=>'tel',:value=>' '}
-                                 .label
-                                    Tel
-                                    %p.red.req *
-                              .input.object.right.text
-                                 %input{:type=>'textbox',:name=>'email',:value=>' '}
-                                 .label
-                                    Email
-                                    %p.red.req *
-                        .col-xs-6
-                           .inputs.line
-                              .input.object.left.text
-                                 %input{:type=>'textbox',:name=>'city',:value=>' '}
-                                 .label
-                                    City
-                                    %p.red.req *
-                              .input.object.right.text
-                                 %select{:name=>'region',:value=>' '}
-                                    %option{:value=>'0'}
-                                    %option{:value=>'1'} Region
-                                    %option{:value=>'2'} State
-                                    %option{:value=>'3'} Province
-                                 .label
-                                    Region, state or province
-                                    %p.red.req *
-                           .inputs.line
-                              .input.object.left.text
-                                 %input{:type=>'textbox',:name=>'zip',:value=>' '}
-                                 .label
-                                    Zip
-                                    %p.red.req *
-                              .input.object.right.text
-                                 %select{:name=>'state',:value=>' '}
-                                    %option{:value=>'0'}
-                                    %option{:value=>'1'} United State
-                                    %option{:value=>'2'} Japanese
-                                    %option{:value=>'3'} Vietnamese
-                                 .label
-                                    Country
-                                    %p.red.req *
-                           .inputs.line
-                              .input.object.left.text
-                                 %input{:type=>'textbox',:name=>'company',:value=>' '}
-                                 .label
-                                    Company
-                              .input.object.right.text
-                                 %input{:type=>'textbox',:name=>'fax',:value=>' '}
-                                 .label
-                                    Fax
-                           .inputs.line
-                              .input.object.left.text
-                                 %input{:type=>'textbox',:name=>'password',:value=>' '}
-                                 .label
-                                    Password
-                                    %p.red.req *
-                              .input.object.right.text
-                                 %input{:type=>'textbox',:name=>'confirm',:value=>' '}
-                                 .label
-                                    Confirm Password
-                                    %p.red.req *
-                           .inputs.line.checking
-                              %span
-                                 %input.checkbox{:type=>'checkbox',:checked=>'checked',:name=>'same'}
-                                 CHECK IF BILLING AND SHIPPING ADDRESS ARE THE SAME
-                  .control
-                     %a.border.btn.down{:href=>'#'} v
-         #frame4.deep1
-            .deep2
-               .content
-                  %form#billing_address
+   #grand.wrapper
+      #screen
+         #display
+            #frame1.deep1.page.active
+               .deep2
+                  .content
                      .top.title
-                        %h1 Shipping Address
+                        %h1 Let’s get Start
                      .detail
                         .col-xs-6
-                           .inputs.line
-                              .input.object.left.text
-                                 %input{:type=>'textbox',:name=>'firstname',:value=>' '}
-                                 .label
-                                    First name
-                                    %p.red.req *
-                              .input.object.right.text
-                                 %input{:type=>'textbox',:name=>'lastname',:value=>' '}
-                                 .label
-                                    Last name
-                                    %p.red.req *
-                           .inputs.line
-                              .input.object.fit.text
-                                 %input{:type=>'textbox',:name=>'address',:value=>' '}
-                                 .label
-                                    Address
-                                    %p.red.req *
-                           .inputs.line
-                              .input.object.fit.text
-                                 %input{:type=>'textbox',:name=>'address2',:value=>' '}
-                                 .label
-                                    Address 2
-                           .inputs.line
-                              .input.object.left.text
-                                 %input{:type=>'textbox',:name=>'tel',:value=>' '}
-                                 .label
-                                    Tel
-                                    %p.red.req *
+                           %h2 How many snacks per box?
+                           .snack-numbers
+                              .col-snack-numbers
+                                 .buf
+                                    %p.snack-total +5
+                                    %p.snack-text snacks
+                              .col-snack-numbers.active
+                                 .buf
+                                    %p.snack-total +10
+                                    %p.snack-text snacks
+                              .col-snack-numbers
+                                 .buf
+                                    %p.snack-total +20
+                                    %p.snack-text snacks
                         .col-xs-6
-                           .inputs.line
-                              .input.object.left.text
-                                 %input{:type=>'textbox',:name=>'city',:value=>' '}
-                                 .label
-                                    City
-                                    %p.red.req *
-                              .input.object.right.text
-                                 %select{:name=>'region',:value=>' '}
-                                    %option{:value=>'0'}
-                                    %option{:value=>'1'} Region
-                                    %option{:value=>'2'} State
-                                    %option{:value=>'3'} Province
-                                 .label
-                                    Region, state or province
-                                    %p.red.req *
-                           .inputs.line
-                              .input.object.left.text
-                                 %input{:type=>'textbox',:name=>'zip',:value=>' '}
-                                 .label
-                                    Zip
-                                    %p.red.req *
-                              .input.object.right.text
-                                 %select{:name=>'state',:value=>' '}
-                                    %option{:value=>'0'}
-                                    %option{:value=>'1'} United State
-                                    %option{:value=>'2'} Japanese
-                                    %option{:value=>'3'} Vietnamese
-                                 .label
-                                    Country
-                                    %p.red.req *
-                           .inputs.line
-                              .input.object.left.text
-                                 %input{:type=>'textbox',:name=>'company',:value=>' '}
-                                 .label
-                                    Company
-                              .input.object.right.text
-                                 %input{:type=>'textbox',:name=>'fax',:value=>' '}
-                                 .label
-                                    Fax
-                           .inputs.line
-                              .input.object.left.text
-                                 %input{:type=>'textbox',:name=>'password',:value=>' '}
-                                 .label
-                                    Password
-                                    %p.red.req *
-                              .input.object.right.text
-                                 %input{:type=>'textbox',:name=>'confirm',:value=>' '}
-                                 .label
-                                    Confirm Password
-                                    %p.red.req *
+                           %h2 Choose your delivery frequency
+                           %ul.times.list
+                              %li.time.t1
+                                 %a{:href=>'#'}
+                                    weekly
+                              %li.time.t1.active
+                                 %a{:href=>'#'}
+                                    every 2 weeks
+                              %li.time.t1
+                                 %a{:href=>'#'}
+                                    monthly
+                     .control
+                        %a.border.btn.next{:href=>'#'} Next
+            #frame2.deep1.page
+               .deep2
+                  .content
+                     .top.title
+                        %h1 Customize this package
+                        %p.min.text (optional for picky eaters or people with allergies)
+                     .detail
+                        %ul.labels.list
+                           %li.label.item
+                              .cycle Spicy
+                              %a.minu -
+                              %a.plus +
+                           %li.label.item
+                              .cycle Salty
+                              %a.minu -
+                              %a.plus +
+                           %li.label.item
+                              .cycle Sweet
+                              %a.minu -
+                              %a.plus +
+                           %li.label.item
+                              .cycle Sour
+                              %a.minu -
+                              %a.plus +
+                           %li.label.item
+                              .cycle Chewy
+                              %a.minu -
+                              %a.plus +
+                           %li.label.item
+                              .cycle Crunchy
+                              %a.minu -
+                              %a.plus +
+                           %li.label.item
+                              .cycle Gummy
+                              %a.minu -
+                              %a.plus +
+                           %li.label.item
+                              .cycle Seafood
+                              %a.minu -
+                              %a.plus +
+                           %li.label.item
+                              .cycle Nuts
+                              %a.minu -
+                              %a.plus +
+                           %li.label.item
+                              .cycle Meat
+                              %a.minu -
+                              %a.plus +
+                           %li.label.item
+                              .cycle Candy
+                              %a.minu -
+                              %a.plus +
+                           %li.label.item
+                              .cycle Chips
+                              %a.minu -
+                              %a.plus +
+                           %li.label.item
+                              .cycle Cookies
+                              %a.minu -
+                              %a.plus +
+                           %li.label.item
+                              .cycle Foreign Snacks
+                              %a.minu -
+                              %a.plus +
+                           %li.label.item
+                              .cycle Domestic Snacks
+                              %a.minu -
+                              %a.plus +
+                     .control
+                        %p Above Variables ($1 Each)
+                        %a.border.btn.down{:href=>'#'} v
+            #frame3.deep1.page
+               .deep2
+                  .content
+                     .top.title
+                        %h1 Billing Address
+                        %p.min.text
+                           Already have an account?
+                           %a#quicklogin.min.red.btn{:href=>'#'}
+                              Sign in!
+                     .detail
+                        %form.site-form.site-form{:action=>'#',:name=>'billing-address',:method=>'post'}
+                           .row.gift-billing.col-xs-6
+                              .col-xs-12
+                                 .row.form-col2
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'firstname',:placeholder=>'First Name*',:value=>' ',:required=>' '}
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'lastname',:placeholder=>'Last Name*',:value=>' ',:required=>' '}
+                                 .row.form-col2
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'address',:placeholder=>'Address*',:value=>' ',:required=>' '}
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'address2',:placeholder=>'Address 2',:value=>' ',:required=>' '}
+                                 .row.form-col2
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'tel',:placeholder=>'Tel*',:value=>' ',:required=>' '}
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'email',:placeholder=>'Email*',:value=>' ',:required=>' '}
+                           .row.gift-billing.col-xs-6
+                              .col-xs-12
+                                 .row.form-col2
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'city',:placeholder=>'City*',:value=>' ',:required=>' '}
+                                    .col-xs-6.form-group
+                                       %select.selectpicker{:name=>'region'}
+                                          %option{:selected=>'selected',:value=>'0'} Region, state or province*
+                                          %option{:value=>'+80'} +80
+                                          %option{:value=>'+82'} +82
+                                 .row.form-col2
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'zip',:placeholder=>'Zip*',:value=>' ',:required=>' '}
+                                    .col-xs-6.form-group
+                                       %select.selectpicker{:name=>'region'}
+                                          %option{:selected=>'selected',:value=>'0'} United States
+                                          %option{:value=>'japan'} Japan
+                                          %option{:value=>'france'} France
+                                          %option{:value=>'canada'} Canada
+                                          %option{:value=>'gemany'} Gemany
+                                 .row.form-col2
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'company',:placeholder=>'Company',:value=>' ',:required=>' '}
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'fax',:placeholder=>'Fax',:value=>' ',:required=>' '}
+                                 .row.form-col2
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'password',:placeholder=>'Password*',:value=>' ',:required=>' '}
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'confirm',:placeholder=>'Confirm Password*',:value=>' ',:required=>' '}
+                              .inputs.line.checking
+                                 %span
+                                    %input.checkbox{:type=>'checkbox',:checked=>'checked',:name=>'same'}
+                                    CHECK IF BILLING AND SHIPPING ADDRESS ARE THE SAME
                      .control
                         %a.border.btn.down{:href=>'#'} v
-         #frame4.deep1
-            .deep2
-               .content
-                  %form#shipping_address
+            #frame4.deep1.page
+               .deep2
+                  .content
+                     %form#shipping_address.site-form{:action=>'#',:name=>'shipping-address',:method=>'post'}
+                        .top.title
+                           %h1 Shipping Address
+                        .detail
+                           .row.gift-billing.col-xs-6
+                              .col-xs-12
+                                 .row.form-col2
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'firstname',:placeholder=>'First Name*',:value=>' ',:required=>' '}
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'lastname',:placeholder=>'Last Name*',:value=>' ',:required=>' '}
+                                 .row.form-col2
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'address',:placeholder=>'Address*',:value=>' ',:required=>' '}
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'address2',:placeholder=>'Address 2',:value=>' ',:required=>' '}
+                                 .row.form-col2
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'tel',:placeholder=>'Tel*',:value=>' ',:required=>' '}
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'email',:placeholder=>'Email*',:value=>' ',:required=>' '}
+                           .row.gift-billing.col-xs-6
+                              .col-xs-12
+                                 .row.form-col2
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'city',:placeholder=>'City*',:value=>' ',:required=>' '}
+                                    .col-xs-6.form-group
+                                       %select.selectpicker{:name=>'region'}
+                                          %option{:selected=>'selected',:value=>'0'} Region, state or province*
+                                          %option{:value=>'+80'} +80
+                                          %option{:value=>'+82'} +82
+                                 .row.form-col2
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'zip',:placeholder=>'Zip*',:value=>' ',:required=>' '}
+                                    .col-xs-6.form-group
+                                       %select.selectpicker{:name=>'region'}
+                                          %option{:selected=>'selected',:value=>'0'} United States
+                                          %option{:value=>'japan'} Japan
+                                          %option{:value=>'france'} France
+                                          %option{:value=>'canada'} Canada
+                                          %option{:value=>'gemany'} Gemany
+                                 .row.form-col2
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'company',:placeholder=>'Company',:value=>' ',:required=>' '}
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'fax',:placeholder=>'Fax',:value=>' ',:required=>' '}
+                                 .row.form-col2
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'password',:placeholder=>'Password*',:value=>' ',:required=>' '}
+                                    .col-xs-6.form-group
+                                       %input.form-control{:type=>'textbox',:name=>'confirm',:placeholder=>'Confirm Password*',:value=>' ',:required=>' '}
+                              .inputs.line.checking
+                                 %span
+                                    %input.checkbox{:type=>'checkbox',:checked=>'checked',:name=>'same'}
+                        .control
+                           %a.border.btn.down{:href=>'#'} v
+            #frame4.deep1.page
+               .deep2
+                  .content
+                     %form#shipping_address
+                        .top.title
+                           %h1 Your SnackPak is ready
+                        .detail
+                           .col-xs-6.site-form
+                              .row.gift-card
+                                 .col-xs-12
+                                    %h2 Payment Method
+                                 .box-card
+                                    .card-img
+                                       %img{:src=>'./images/Common/Payment/ico_payment_pp.png'}
+                                       %span.card-check
+                                    .card-img
+                                       %img{:src=>'./images/Common/Payment/ico_payment_vs.png'}
+                                       %span.card-check
+                                    .card-img.active
+                                       %img{:src=>'./images/Common/Payment/ico_payment_mc.png'}
+                                       %span.card-check
+                                    .card-img
+                                       %img{:src=>'./images/Common/Payment/ico_payment_ae.png'}
+                                       %span.card-check
+                                    .card-img
+                                       %img{:src=>'./images/Common/Payment/ico_payment_dn.png'}
+                                       %span.card-check
+                                    .card-img
+                                       %img{:src=>'./images/Common/Payment/ico_payment_bc.png'}
+                                       %span.card-check
+                              .row
+                                 .col-xs-12.form-group
+                                    %input.form-control{:type=>'textbox',:name=>'cardnumber',:placeholder=>'Card Number*',:value=>' ',:required=>' '}
+                              .row
+                                 .col-xs-12.form-group
+                                    %input.form-control{:type=>'textbox',:name=>'cardaddress',:placeholder=>'Card Address*',:value=>' ',:required=>' '}
+                              .row.col-xs-12
+                                 .col-xs-6.form-group
+                                    %input.form-control{:type=>'textbox',:name=>'card-date',:placeholder=>'DD/MM/YY',:value=>' ',:required=>' '}
+                                 .col-xs-6.form-group
+                                    %input.form-control{:type=>'textbox',:name=>'card-security',:placeholder=>'CVV',:value=>' ',:required=>' '}
+                           .col-xs-6
+                              .inputs.line
+                                 %h2 Shipping Method
+                              .inputs.line
+                                 .dashed.border
+                                    .subcontent
+                                       .big.text Flat rate
+                                       .coin.text
+                                          .currency $
+                                          .big.number 12
+                                          .small.number 00
+                                       .min.text Purchase multiple months and save on shipping!
+                              .inputs.line
+                                 %h2 Apply Promo Code
+                              .inputs.line
+                                 .input.object.fit.text
+                                    %input{:type=>'textbox',:name=>'promocode',:value=>' '}
+                                    .label
+                                       Enter your Promo code
+                                       %p.green.checked
+                        .control
+                           %a.border.btn.down{:href=>'#'} Order Now
+                           %p.sub.text By clicking ORDER, you agree to the TERMS OF USE
+            #frame4.deep1.page
+               .deep2
+                  .content
                      .top.title
-                        %h1 Your SnackPak is ready
+                        %h1 Check out Sucessfully
+                        %h2 Your MunchPak is on the way
                      .detail
-                        .col-xs-6
-                           .inputs.line
-                              %h2 Payment Method
-                           .inputs.line
-                              %ul.cards.list
-                                 %li.card.item.c1
-                                    %a{:href=>'#'}
-                                       %img{:src=>'./images/01_Checkout/card_paypal.png'}
-                                 %li.card.item.c2
-                                    %a{:href=>'#'}
-                                       %img{:src=>'./images/01_Checkout/card_visa.png'}
-                                 %li.card.item.c3.active
-                                    %a{:href=>'#'}
-                                       %img{:src=>'./images/01_Checkout/card_master.png'}
-                                 %li.card.item.c4
-                                    %a{:href=>'#'}
-                                       %img{:src=>'./images/01_Checkout/card_american.png'}
-                                 %li.card.item.c5
-                                    %a{:href=>'#'}
-                                       %img{:src=>'./images/01_Checkout/card_discover.png'}
-                                 %li.card.item.c6
-                                    %a{:href=>'#'}
-                                       %img{:src=>'./images/01_Checkout/card_bitcoin.png'}
-                           .inputs.line
-                              .input.object.fit.text
-                                 %input{:type=>'textbox',:name=>'cardname',:value=>' '}
-                                 .label
-                                    Name on Card
-                           .inputs.line
-                              .input.object.fit.text
-                                 %input{:type=>'textbox',:name=>'cardnumber',:value=>' '}
-                                 .label
-                                    Card Number
-                           .inputs.line
-                              .input.object.left.text
-                                 %input{:type=>'textbox',:name=>'expired',:value=>' '}
-                                 .label
-                                    Expired date
-                              .input.object.right.text
-                                 %input{:type=>'textbox',:name=>'cvv',:value=>' '}
-                                 .label
-                                    CVV
-                        .col-xs-6
-                           .inputs.line
-                              %h2 Shipping Method
-                           .inputs.line
-                              .dashed.border
-                                 .subcontent
-                                    .big.text Flat rate
-                                    .coin.text
-                                       .currency $
-                                       .big.number 12
-                                       .small.number 00
-                                    .min.text Purchase multiple months and save on shipping!
-                           .inputs.line
-                              %h2 Apply Promo Code
-                           .inputs.line
-                              .input.object.fit.text
-                                 %input{:type=>'textbox',:name=>'promocode',:value=>' '}
-                                 .label
-                                    Enter your Promo code
-                                    %p.green.checked
+                        .special.line.l1
+                           %h3.red Total amount
+                        .special.line.l2
+                           %h4.black Shipping & Promo Included
+                        .special.line.l3
+                           .amount
+                              .currency $
+                              .big.number 230
+                              .small.number 25
+                        .special.line.l4
+                           %p.grey Share URL & Receive 50 MunchPak Points for every friend you refer
+                        .special.line.l5
+                           %a.red{:href=>'https://munchpak.com/onepage/',:target=>'_blank'} https://munchpak.com/onepage/
                      .control
-                        %a.border.btn.down{:href=>'#'} Order Now
-                        %p.sub.text By clicking ORDER, you agree to the TERMS OF USE
-         #frame4.deep1
-            .deep2
-               .content
-                  .top.title
-                     %h1 Check out Sucessfully
-                     %h2 Your MunchPak is on the way
-                  .detail
-                     .special.line.l1
-                        %h3.red Total amount
-                     .special.line.l2
-                        %h4.black Shipping & Promo Included
-                     .special.line.l3
-                        .amount
-                           .currency $
-                           .big.number 230
-                           .small.number 25
-                     .special.line.l4
-                        %p.grey Share URL & Receive 50 MunchPak Points for every friend you refer
-                     .special.line.l5
-                        %a.red{:href=>'https://munchpak.com/onepage/',:target=>'_blank'} https://munchpak.com/onepage/
-                  .control
-                     %h3 Or share this url on
-                     %ul.social.small.list
-                        %li.social.ico.item
-                           %a{:href=>'#',:target=>'_blank'}
-                              %img{:src=>'./images/01_Checkout/mini_facebook.png'}
-                        %li.social.ico.item
-                           %a{:href=>'#',:target=>'_blank'}
-                              %img{:src=>'./images/01_Checkout/mini_twitter.png'}
-                        %li.social.ico.item
-                           %a{:href=>'#',:target=>'_blank'}
-                              %img{:src=>'./images/01_Checkout/mini_google.png'}
-                     %a.red.big.btn{:href=>'#',:target=>'_blank'} Visit our Shop
+                        %h3 Or share this url on
+                        %ul.social.small.list
+                           %li.social.ico.item
+                              %a{:href=>'#',:target=>'_blank'}
+                                 %img{:src=>'./images/01_Checkout/mini_facebook.png'}
+                           %li.social.ico.item
+                              %a{:href=>'#',:target=>'_blank'}
+                                 %img{:src=>'./images/01_Checkout/mini_twitter.png'}
+                           %li.social.ico.item
+                              %a{:href=>'#',:target=>'_blank'}
+                                 %img{:src=>'./images/01_Checkout/mini_google.png'}
+                        %a.red.big.btn{:href=>'#',:target=>'_blank'} Visit our Shop
+      #controller
+         #back
+            %a#go_back.square.btn.min{:href=>'#'}
+               <
+         #scroller
+            .main.content
+               .currency $
+               .big.number 230
+               .small.number 25
+            .sub.content
+               %ul.steps.check
+                  %li.item.step1.active
+                     %a{:href=>'#1'} 1
+                  %li.item.step2
+                     %a{:href=>'#1'} 2
+                  %li.item.step3
+                     %a{:href=>'#1'} 3
+      #scenes
+         #images
+            .scene.s1.day
+            .scene.s2.night
+         #decos
+            .scene.s1.sun
+            .scene.s2.moon
+            .scene.s3.smeil
+         #animation
+            #truck.obj.o1
+            #family.obj.o2
+            #hearts.obj.o3
    #login.scene.s0
       .content
          .top.title
@@ -424,37 +378,9 @@
                   %img.ico{:src=>'./images/01_Checkout/ico_facebook.png',:rel=>'Login via Facebook'}
                %a.google.right{:href=>'#',:target=>'_blank'}
                   %img.ico{:src=>'./images/01_Checkout/ico_google.png',:rel=>'Login via Google'}
-   #controller
-      #back
-         %a#go_back.square.btn.min{:href=>'#'}
-            <
-      #scroller
-         .main.content
-            .currency $
-            .big.number 230
-            .small.number 25
-         .sub.content
-            %ul.steps.check
-               %li.item.step1.active
-                  %a{:href=>'#1'} 1
-               %li.item.step2
-                  %a{:href=>'#1'} 2
-               %li.item.step3
-                  %a{:href=>'#1'} 3
-   #scenes
-      #background
-         .scene.s1.day
-         .scene.s2.night
-      #images
-         .scene.s1.day
-         .scene.s2.night
-      #decos
-         .scene.s1.sun
-         .scene.s2.moon
-         .scene.s3.smeil
-      #animation
-         #truck.obj.o1
-         #family.obj.o2
-         #hearts.obj.o3
-   %script{:type=>"text/javascript",:src=>'./js/hieut.js'}              
+      .back.dark
+   #background
+      .scene.s1.day.active
+      .scene.s2.night
+   %script{:type=>"text/javascript",:src=>'./js/hieut.js'}
 - echo('</html>');

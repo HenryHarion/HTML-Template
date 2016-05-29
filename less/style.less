@@ -1,25 +1,102 @@
-body#checkout {
-     #screen{
+html{
+   height:100%;
+   body#checkout{
+      height:100%;
+      #grand{
+         position:absolute;
+         top:0;
+         width:100%;
+         height: 100%;
+         overflow: hidden;
+         z-index:9;
+         #screen{
+            max-width: 1230px;
+            height:100%;
+            margin:0 auto;
+            width:1230;
+            overflow:hidden;
+            padding:0;
+            #display{
+               width:100%;
+               height:100%;
+               overflow:hidden;
+               .page{
+                  top:0;
+                  position:absolute;
+                  z-index:5;
+                  width:100%;
+                  height:100%;
+                  display: none;
+                  .content{
+                     .top.title{
+                        margin: 150px 0 50px;
+                        text-align: center;
+                        width: 100%;
+                        h1{
+                           color: #fff;
+                           font-size: 45px;
+                           font-weight: 900;
+                           letter-spacing: 4px;
+                           text-shadow: 2px 5px 0 rgba(1, 1, 1, 0.1);
+                           text-transform: uppercase;
+                        }
+                     }
+                  }
+               }
+               .page.active{
+                  display: block;
+               }
+            }
+            #controller{
 
-     }
-     #login{
+            }
+            #scenes{
+               position:absolute;
+               top:0;
+               left:0;
+               z-index: 0;
+               #images{
 
-     }
-     #controller{
+               }
+               #decos{
 
-     }
-     #scenes{
-          #background{
+               }
+               #animation{
 
-          }
-          #images{
-
-          }
-          #decos{
-               
-          }
-          #animation{
-
-          }
-     }
+               }
+            }
+         }
+      }
+      #login{
+         display:none;
+      }
+      #background{
+         height:100%;
+         width:100%;
+         position:absolute;
+         z-index:1;
+         .scene {
+            width:100%;
+            height:100%;
+            display:none;
+         }
+         .scene.active {
+            display:block;
+         }
+         .day {
+            width:100%;
+            height:100%;
+            position:absolute;
+            z-index:1;
+            background:url("../images/01_Checkout/morning_background.png") repeat-x scroll bottom center;
+         }
+         .night {
+            width:100%;
+            height:100%;
+            position:absolute;
+            z-index:1;
+            background:rgba(0, 0, 0, 0) url("../images/01_Checkout/night_background.png") repeat-x scroll bottom center;
+         }
+      }
+   }
 }
