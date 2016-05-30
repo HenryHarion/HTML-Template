@@ -1128,7 +1128,7 @@ flavored walter
 
                         <div class='content'>
 
-                           <form id='shipping_address'>
+                           <form id='checkout_ready'>
 
                               <div class='top title'>
 
@@ -1140,7 +1140,7 @@ flavored walter
 
                               <div class='detail'>
 
-                                 <div class='col-xs-6 site-form'>
+                                 <div class='col-xs-6 site-form left-side'>
 
                                     <div class='row gift-card'>
 
@@ -1246,7 +1246,7 @@ flavored walter
                                     </div>
 
 
-                                    <div class='row col-xs-12'>
+                                    <div class='row'>
 
                                        <div class='col-xs-6 form-group'>
 
@@ -1266,7 +1266,7 @@ flavored walter
                                  </div>
 
 
-                                 <div class='col-xs-6'>
+                                 <div class='col-xs-6 right-side'>
 
                                     <div class='inputs line'>
 
@@ -1324,15 +1324,10 @@ flavored walter
 
                                        <div class='input object fit text'>
 
-                                          <input type='textbox' name='promocode' value=' ' />
+                                          <input type='textbox' name='promocode' placeholder='Enter your Promo code' />
 
 
-                                          <div class='label'>Enter your Promo code
-
-
-                                             <p class='green checked'>
-                                             </p>
-
+                                          <div class='green checked'>
                                           </div>
 
                                        </div>
@@ -1346,7 +1341,7 @@ flavored walter
 
                               <div class='control'>
 
-                                 <a class='border btn down' href='#'> Order Now
+                                 <a class='border complete' href='#'> Order Now
                                  </a>
 
 
@@ -1499,75 +1494,6 @@ flavored walter
          </div>
 
 
-         <div id='controller'>
-
-            <div class='wrapper'>
-
-               <div id='back'>
-
-                  <a id='go_back' href='#'>&lt;
-
-                  </a>
-
-               </div>
-
-
-               <div id='scroller'>
-
-                  <div class='main content'>
-
-                     <div class='currency'> $
-                     </div>
-
-
-                     <div class='big number'> 230
-                     </div>
-
-
-                     <div class='small number'> 25
-                     </div>
-
-                  </div>
-
-
-                  <div class='sub content'>
-
-                     <ul class='steps check'>
-
-                        <li class='item step1 active'>
-
-                           <a href='#1'> 1
-                           </a>
-
-                        </li>
-
-
-                        <li class='item step2 current'>
-
-                           <a href='#1'> 2
-                           </a>
-
-                        </li>
-
-
-                        <li class='item step3'>
-
-                           <a href='#1'> 3
-                           </a>
-
-                        </li>
-
-                     </ul>
-
-                  </div>
-
-               </div>
-
-            </div>
-
-         </div>
-
-
          <div id='scenes'>
 
             <div class='wrapper'>
@@ -1622,7 +1548,76 @@ flavored walter
       </div>
 
 
-      <div class='scene s0 active' id='login'>
+      <div id='controller'>
+
+         <div class='wrapper'>
+
+            <div id='back'>
+
+               <a id='go_back' href='#'>&lt;
+
+               </a>
+
+            </div>
+
+
+            <div id='scroller'>
+
+               <div class='main content'>
+
+                  <div class='currency'> $
+                  </div>
+
+
+                  <div class='big number'> 230
+                  </div>
+
+
+                  <div class='small number'> 25
+                  </div>
+
+               </div>
+
+
+               <div class='sub content'>
+
+                  <ul class='steps check'>
+
+                     <li class='item step1 active'>
+
+                        <a href='#1'> 1
+                        </a>
+
+                     </li>
+
+
+                     <li class='item step2 current'>
+
+                        <a href='#1'> 2
+                        </a>
+
+                     </li>
+
+
+                     <li class='item step3'>
+
+                        <a href='#1'> 3
+                        </a>
+
+                     </li>
+
+                  </ul>
+
+               </div>
+
+            </div>
+
+         </div>
+
+      </div>
+
+
+      <div class='scene s0' id='login'>
 
          <div class='fronted'>
 
@@ -1654,6 +1649,10 @@ flavored walter
                      <div class='line'>
 
                         <input class='textbox' id='password' type='text' placeholder='Password' />
+
+
+                        <a class='forgot-password' href='#' target='_blank'> Forgot password
+                        </a>
 
                      </div>
 

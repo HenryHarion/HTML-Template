@@ -303,11 +303,11 @@
                   #frame6.deep1.page.active
                      .deep2
                         .content
-                           %form#shipping_address
+                           %form#checkout_ready
                               .top.title
                                  %h1 Your SnackPak is ready
                               .detail
-                                 .col-xs-6.site-form
+                                 .col-xs-6.site-form.left-side
                                     .row.gift-card
                                        .col-xs-12
                                           %h2 Payment Method
@@ -336,12 +336,12 @@
                                     .row
                                        .col-xs-12.form-group
                                           %input.form-control{:type=>'textbox',:name=>'cardaddress',:placeholder=>'Card Address*',:required=>' '}
-                                    .row.col-xs-12
+                                    .row
                                        .col-xs-6.form-group
                                           %input.form-control{:type=>'textbox',:name=>'card-date',:placeholder=>'DD/MM/YY',:required=>' '}
                                        .col-xs-6.form-group
                                           %input.form-control{:type=>'textbox',:name=>'card-security',:placeholder=>'CVV',:required=>' '}
-                                 .col-xs-6
+                                 .col-xs-6.right-side
                                     .inputs.line
                                        %h2 Shipping Method
                                     .inputs.line
@@ -357,12 +357,10 @@
                                        %h2 Apply Promo Code
                                     .inputs.line
                                        .input.object.fit.text
-                                          %input{:type=>'textbox',:name=>'promocode',:value=>' '}
-                                          .label
-                                             Enter your Promo code
-                                             %p.green.checked
+                                          %input{:type=>'textbox',:name=>'promocode',:placeholder=>'Enter your Promo code'}
+                                          .green.checked
                               .control
-                                 %a.border.btn.down{:href=>'#'} Order Now
+                                 %a.border.complete{:href=>'#'} Order Now
                                  %p.sub.text By clicking ORDER, you agree to the TERMS OF USE
                   #frame7.deep1.page
                      .deep2
@@ -397,24 +395,6 @@
                                     %a{:href=>'#',:target=>'_blank'}
                                        %img{:src=>'./images/01_Checkout/mini_google.png'}
                               %a.red.big.btn{:href=>'#',:target=>'_blank'} Visit our Shop
-         #controller
-            .wrapper
-               #back
-                  %a#go_back{:href=>'#'}
-                     <
-               #scroller
-                  .main.content
-                     .currency $
-                     .big.number 230
-                     .small.number 25
-                  .sub.content
-                     %ul.steps.check
-                        %li.item.step1.active
-                           %a{:href=>'#1'} 1
-                        %li.item.step2.current
-                           %a{:href=>'#1'} 2
-                        %li.item.step3
-                           %a{:href=>'#1'} 3
          #scenes
             .wrapper
                #images
@@ -428,7 +408,25 @@
                   #truck.obj.o1.active
                   #family.obj.o2
                   #hearts.obj.o3
-      #login.scene.s0.active
+      #controller
+         .wrapper
+            #back
+               %a#go_back{:href=>'#'}
+                  <
+            #scroller
+               .main.content
+                  .currency $
+                  .big.number 230
+                  .small.number 25
+               .sub.content
+                  %ul.steps.check
+                     %li.item.step1.active
+                        %a{:href=>'#1'} 1
+                     %li.item.step2.current
+                        %a{:href=>'#1'} 2
+                     %li.item.step3
+                        %a{:href=>'#1'} 3
+      #login.scene.s0
          .fronted
             .content.wrapper
                .top.title
@@ -440,6 +438,7 @@
                         %input#username.textbox{:type=>'text',:placeholder=>'Username'}
                      .line
                         %input#password.textbox{:type=>'text',:placeholder=>'Password'}
+                        %a.forgot-password{:href=>'#',:target=>'_blank'} Forgot password
                      .line
                         %input#login.submit.btn{:type=>'submit',:value=>'login'}
                .control
