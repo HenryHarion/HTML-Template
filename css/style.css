@@ -11,11 +11,13 @@ html body#checkout #grand {
   height: 100%;
   overflow: hidden;
   z-index: 9;
+  min-height: 1024px;
 }
 html body#checkout #grand #screen,
 html body#checkout #grand .wrapper {
   max-width: 1230px;
   height: 100%;
+  min-height: 768px;
   margin: 0 auto;
   width: 1230px;
   position: relative;
@@ -42,13 +44,13 @@ html body#checkout #grand .wrapper #show #display .page {
 }
 html body#checkout #grand #screen #show #display .page .content .top.title,
 html body#checkout #grand .wrapper #show #display .page .content .top.title {
-  margin: 10% 0 4%;
+  margin: 150px 0 4%;
   text-align: center;
   width: 100%;
 }
 html body#checkout #grand #screen #show #display .page .content .top.title h1,
 html body#checkout #grand .wrapper #show #display .page .content .top.title h1 {
-  color: #fff;
+  color: #ffffff;
   font-size: 45px;
   font-weight: 900;
   letter-spacing: 4px;
@@ -65,13 +67,25 @@ html body#checkout #grand .wrapper #show #display #frame1 .detail .snack-numbers
 }
 html body#checkout #grand #screen #show #display #frame1 .detail h2,
 html body#checkout #grand .wrapper #show #display #frame1 .detail h2 {
-  color: #fff;
+  color: #ffffff;
   font-size: 22px;
   font-weight: 800;
   letter-spacing: 3px;
   text-align: center;
   text-shadow: 2px 3px 0 rgba(1,1,1,0.1);
   text-transform: uppercase;
+}
+html body#checkout #grand #screen #show #display #frame1 .detail .left-side .col-snack-numbers,
+html body#checkout #grand .wrapper #show #display #frame1 .detail .left-side .col-snack-numbers {
+  float: left;
+}
+html body#checkout #grand #screen #show #display #frame1 .detail .right-side,
+html body#checkout #grand .wrapper #show #display #frame1 .detail .right-side {
+  padding: 0 25px 0 0;
+}
+html body#checkout #grand #screen #show #display #frame1 .detail .right-side .col-snack-numbers,
+html body#checkout #grand .wrapper #show #display #frame1 .detail .right-side .col-snack-numbers {
+  float: right;
 }
 html body#checkout #grand #screen #show #display #frame1 .detail .snack-numbers .col-snack-numbers,
 html body#checkout #grand .wrapper #show #display #frame1 .detail .snack-numbers .col-snack-numbers {
@@ -116,7 +130,7 @@ html body#checkout #grand .wrapper #show #display #frame1 .detail .snack-numbers
 }
 html body#checkout #grand #screen #show #display #frame1 .detail .snack-numbers .col-snack-numbers.active .buf,
 html body#checkout #grand .wrapper #show #display #frame1 .detail .snack-numbers .col-snack-numbers.active .buf {
-  background: #FFF;
+  background: #ffffff;
   box-shadow: 4px 5px 0 rgba(1,1,1,0.1);
   color: #e3413e;
 }
@@ -131,8 +145,8 @@ html body#checkout #grand .wrapper #show #display #frame1 .detail .snack-numbers
 }
 html body#checkout #grand #screen #show #display #frame1 .detail .snack-numbers .col-snack-numbers.active .buf .label-text,
 html body#checkout #grand .wrapper #show #display #frame1 .detail .snack-numbers .col-snack-numbers.active .buf .label-text {
-  line-height: 60%;
-  padding: 60px 0 0;
+  line-height: 120%;
+  padding: 53px 0 0;
 }
 html body#checkout #grand #screen #show #display #frame1 .control,
 html body#checkout #grand .wrapper #show #display #frame1 .control {
@@ -145,7 +159,7 @@ html body#checkout #grand .wrapper #show #display #frame1 .control a.btn.border 
   background: none;
   border: 2px solid rgba(255,255,255,0.25);
   border-radius: 4px;
-  color: #FFF;
+  color: #ffffff;
   margin: 10% auto 0;
 }
 html body#checkout #grand #screen #show #display #frame2 .top.title h1,
@@ -154,7 +168,7 @@ html body#checkout #grand .wrapper #show #display #frame2 .top.title h1 {
 }
 html body#checkout #grand #screen #show #display #frame2 .top.title p.min.text,
 html body#checkout #grand .wrapper #show #display #frame2 .top.title p.min.text {
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   letter-spacing: 1px;
   margin: 20px 0 5px;
@@ -282,7 +296,7 @@ html body#checkout #grand .wrapper #show #display #frame2 .control p {
   margin: 4% 0 0 0;
   font-family: raleway;
   font-weight: 700;
-  color: #FFF;
+  color: #ffffff;
   letter-spacing: 1px;
   font-size: 15px;
   text-shadow: 2px 3px 0 rgba(1,1,1,0.1);
@@ -301,7 +315,7 @@ html body#checkout #grand .wrapper #show #display #frame2 .control a.btn.border 
 }
 html body#checkout #grand #screen #show #display #frame3 .top.title p.min.text,
 html body#checkout #grand .wrapper #show #display #frame3 .top.title p.min.text {
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   letter-spacing: 1px;
   margin: 20px 0 5px;
@@ -319,7 +333,7 @@ html body#checkout #grand .wrapper #show #display #frame3 .detail ul.icons li.it
   display: inline-block;
   font-weight: 800;
   font-size: 13px;
-  color: #FFF;
+  color: #ffffff;
   margin: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -404,7 +418,7 @@ html body#checkout #grand .wrapper #show #display #frame3 .control p {
   margin: 5% 0 0;
   font-family: raleway;
   font-weight: 700;
-  color: #FFF;
+  color: #ffffff;
   letter-spacing: 1px;
   font-size: 15px;
   text-shadow: 2px 3px 0 rgba(1,1,1,0.1);
@@ -415,19 +429,19 @@ html body#checkout #grand .wrapper #show #display #frame3 .control a.btn.border 
   background: none;
   border: 2px solid rgba(255,255,255,0.25);
   border-radius: 4px;
-  color: #FFF;
+  color: #ffffff;
   margin: 2.5% auto 0;
 }
 html body#checkout #grand #screen #show #display #frame4 .top.title,
 html body#checkout #grand .wrapper #show #display #frame4 .top.title {
-  margin: 10% 0 2.5%;
+  margin: 150px 0 2%;
   overflow: hidden;
   text-align: center;
   width: 100%;
 }
 html body#checkout #grand #screen #show #display #frame4 .top.title p.min.text,
 html body#checkout #grand .wrapper #show #display #frame4 .top.title p.min.text {
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   letter-spacing: 1px;
   margin: 15px 0 5px;
@@ -438,10 +452,12 @@ html body#checkout #grand .wrapper #show #display #frame4 .top.title p.min.text 
   border-radius: 10px;
   font-size: 15px;
   margin: 0 0 0 3px;
-  min-width: auto;
+  min-width: 96px;
+  max-width: 96px;
   padding: 3px 15px;
+  text-align: center;
   text-transform: none;
-  width: auto;
+  width: 96px;
 }
 html body#checkout #grand #screen #show #display #frame4 .detail,
 html body#checkout #grand .wrapper #show #display #frame4 .detail {
@@ -471,10 +487,10 @@ html body#checkout #grand .wrapper #show #display #frame4 .detail .site-form .fo
 html body#checkout #grand #screen #show #display #frame4 .detail .site-form .form-group .form-control,
 html body#checkout #grand .wrapper #show #display #frame4 .detail .site-form .form-group .form-control {
   border-radius: 3px;
-  color: #999;
+  color: #999999;
   font-family: raleway;
   padding: 3px 12px;
-  border: 1px solid #FFF;
+  border: 1px solid #ffffff;
   box-shadow: 2px 3px 0 rgba(1,1,1,0.15);
 }
 html body#checkout #grand #screen #show #display #frame4 .detail .site-form .col-xs-6,
@@ -488,10 +504,10 @@ html body#checkout #grand .wrapper #show #display #frame4 .detail .site-form .co
 }
 html body#checkout #grand #screen #show #display #frame4 .detail .site-form .bootstrap-select,
 html body#checkout #grand .wrapper #show #display #frame4 .detail .site-form .bootstrap-select {
-  border: 1px solid #fff;
-  background: #FFF;
+  border: 1px solid #ffffff;
+  background: #ffffff;
   border-radius: 3px;
-  color: #999;
+  color: #999999;
   padding: 3px 12px;
   font-family: raleway;
   box-shadow: 2px 3px 0 rgba(1,1,1,0.15);
@@ -522,7 +538,7 @@ html body#checkout #grand .wrapper #show #display #frame4 .detail .inputs.line.c
 }
 html body#checkout #grand #screen #show #display #frame4 .detail .inputs.line.checking span,
 html body#checkout #grand .wrapper #show #display #frame4 .detail .inputs.line.checking span {
-  color: #FFF;
+  color: #ffffff;
   float: left;
   text-shadow: 1px 2px 0 rgba(1,1,1,0.1);
   text-transform: uppercase;
@@ -541,7 +557,7 @@ html body#checkout #grand .wrapper #show #display #frame4 .detail .inputs.line.c
 }
 html body#checkout #grand #screen #show #display #frame4 .detail .inputs.line.checking span input.checkbox:not(:checked),
 html body#checkout #grand .wrapper #show #display #frame4 .detail .inputs.line.checking span input.checkbox:not(:checked) {
-  background: #FFF;
+  background: #ffffff;
 }
 html body#checkout #grand #screen #show #display #frame4 .detail .inputs.line.checking span input.checkbox:checked+label span,
 html body#checkout #grand .wrapper #show #display #frame4 .detail .inputs.line.checking span input.checkbox:checked+label span {
@@ -565,7 +581,7 @@ html body#checkout #grand .wrapper #show #display #frame4 .control p {
   margin: 4% 0 0 0;
   font-family: raleway;
   font-weight: 700;
-  color: #FFF;
+  color: #ffffff;
   letter-spacing: 1px;
   font-size: 15px;
   text-shadow: 2px 3px 0 rgba(1,1,1,0.1);
@@ -584,7 +600,7 @@ html body#checkout #grand .wrapper #show #display #frame4 .control a.btn.border 
 }
 html body#checkout #grand #screen #show #display #frame5 .top.title,
 html body#checkout #grand .wrapper #show #display #frame5 .top.title {
-  margin: 10% 0 2.5%;
+  margin: 150px 0 2%;
   overflow: hidden;
   text-align: center;
   width: 100%;
@@ -615,10 +631,10 @@ html body#checkout #grand .wrapper #show #display #frame5 #shipping_address .det
 html body#checkout #grand #screen #show #display #frame5 #shipping_address .detail .form-group .form-control,
 html body#checkout #grand .wrapper #show #display #frame5 #shipping_address .detail .form-group .form-control {
   border-radius: 3px;
-  color: #999;
+  color: #999999;
   font-family: raleway;
   padding: 3px 12px;
-  border: 1px solid #FFF;
+  border: 1px solid #ffffff;
   box-shadow: 2px 3px 0 rgba(1,1,1,0.15);
 }
 html body#checkout #grand #screen #show #display #frame5 #shipping_address .detail .col-xs-6,
@@ -632,10 +648,10 @@ html body#checkout #grand .wrapper #show #display #frame5 #shipping_address .det
 }
 html body#checkout #grand #screen #show #display #frame5 #shipping_address .detail .bootstrap-select,
 html body#checkout #grand .wrapper #show #display #frame5 #shipping_address .detail .bootstrap-select {
-  border: 1px solid #fff;
-  background: #FFF;
+  border: 1px solid #ffffff;
+  background: #ffffff;
   border-radius: 3px;
-  color: #999;
+  color: #999999;
   padding: 3px 12px;
   font-family: raleway;
   box-shadow: 2px 3px 0 rgba(1,1,1,0.15);
@@ -667,7 +683,7 @@ html body#checkout #grand .wrapper #show #display #frame5 .control p {
   margin: 4% 0 0 0;
   font-family: raleway;
   font-weight: 700;
-  color: #FFF;
+  color: #ffffff;
   letter-spacing: 1px;
   font-size: 15px;
   text-shadow: 2px 3px 0 rgba(1,1,1,0.1);
@@ -682,11 +698,11 @@ html body#checkout #grand .wrapper #show #display #frame5 .control a.btn.border 
   background: url("../images/01_Checkout/btn_down.png") no-repeat scroll center center;
   display: block;
   text-indent: 9999px;
-  margin: 6% auto 0;
+  margin: 7% auto 0;
 }
 html body#checkout #grand #screen #show #display #frame6 .top.title,
 html body#checkout #grand .wrapper #show #display #frame6 .top.title {
-  margin: 10% 0 2.5%;
+  margin: 150px 0 2%;
   overflow: hidden;
   text-align: center;
   width: 100%;
@@ -717,7 +733,7 @@ html body#checkout #grand .wrapper #show #display #frame6 #checkout_ready .detai
   font-weight: 900;
   font-size: 23px;
   letter-spacing: 2px;
-  color: #FFF;
+  color: #ffffff;
   text-shadow: 2px 3px 0 rgba(1,1,1,0.1);
 }
 html body#checkout #grand #screen #show #display #frame6 #checkout_ready .detail .left-side,
@@ -756,7 +772,7 @@ html body#checkout #grand .wrapper #show #display #frame6 #checkout_ready .detai
 }
 html body#checkout #grand #screen #show #display #frame6 #checkout_ready .detail .right-side .line .dashed.border .subcontent .big.text,
 html body#checkout #grand .wrapper #show #display #frame6 #checkout_ready .detail .right-side .line .dashed.border .subcontent .big.text {
-  color: #FFF;
+  color: #ffffff;
   font-weight: 900;
   text-transform: uppercase;
   font-size: 15px;
@@ -764,7 +780,7 @@ html body#checkout #grand .wrapper #show #display #frame6 #checkout_ready .detai
 }
 html body#checkout #grand #screen #show #display #frame6 #checkout_ready .detail .right-side .line .dashed.border .subcontent .coin.text,
 html body#checkout #grand .wrapper #show #display #frame6 #checkout_ready .detail .right-side .line .dashed.border .subcontent .coin.text {
-  color: #fff;
+  color: #ffffff;
   font-family: roboto slab;
   overflow: hidden;
   width: 100%;
@@ -799,7 +815,7 @@ html body#checkout #grand .wrapper #show #display #frame6 #checkout_ready .detai
 }
 html body#checkout #grand #screen #show #display #frame6 #checkout_ready .detail .right-side .line .dashed.border .subcontent .min.text,
 html body#checkout #grand .wrapper #show #display #frame6 #checkout_ready .detail .right-side .line .dashed.border .subcontent .min.text {
-  color: #FFF;
+  color: #ffffff;
 }
 html body#checkout #grand #screen #show #display #frame6 #checkout_ready .detail .right-side .line .input.object.fit.text,
 html body#checkout #grand .wrapper #show #display #frame6 #checkout_ready .detail .right-side .line .input.object.fit.text {
@@ -807,10 +823,10 @@ html body#checkout #grand .wrapper #show #display #frame6 #checkout_ready .detai
 }
 html body#checkout #grand #screen #show #display #frame6 #checkout_ready .detail .right-side .line .input.object.fit.text input,
 html body#checkout #grand .wrapper #show #display #frame6 #checkout_ready .detail .right-side .line .input.object.fit.text input {
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 3px;
   box-shadow: 2px 3px 0 rgba(1,1,1,0.15);
-  color: #999;
+  color: #999999;
   font-family: raleway;
   padding: 3px 12px;
   font-size: 16px;
@@ -835,10 +851,10 @@ html body#checkout #grand .wrapper #show #display #frame6 #checkout_ready .detai
 html body#checkout #grand #screen #show #display #frame6 #checkout_ready .detail .form-group .form-control,
 html body#checkout #grand .wrapper #show #display #frame6 #checkout_ready .detail .form-group .form-control {
   border-radius: 3px;
-  color: #999;
+  color: #999999;
   font-family: raleway;
   padding: 3px 12px;
-  border: 1px solid #FFF;
+  border: 1px solid #ffffff;
   box-shadow: 2px 3px 0 rgba(1,1,1,0.15);
 }
 html body#checkout #grand #screen #show #display #frame6 #checkout_ready .detail .col-xs-6,
@@ -868,16 +884,16 @@ html body#checkout #grand .wrapper #show #display #frame6 .control p {
   margin: 1% 0 0 0;
   font-family: raleway;
   font-weight: 700;
-  color: #FFF;
+  color: #ffffff;
   letter-spacing: 1px;
   font-size: 15px;
   text-shadow: 2px 3px 0 rgba(1,1,1,0.1);
 }
 html body#checkout #grand #screen #show #display #frame6 .control a.border.complete,
 html body#checkout #grand .wrapper #show #display #frame6 .control a.border.complete {
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 5px;
-  color: #fff;
+  color: #ffffff;
   display: block;
   font-family: roboto slab;
   font-size: 20px;
@@ -894,105 +910,158 @@ html body#checkout #grand .wrapper #show #display #frame6 .control a.border.comp
 }
 html body#checkout #grand #screen #show #display #frame7 .top.title,
 html body#checkout #grand .wrapper #show #display #frame7 .top.title {
-  margin: 10% 0 2.5%;
+  margin: 150px 0 2%;
   overflow: hidden;
   text-align: center;
   width: 100%;
 }
-html body#checkout #grand #screen #show #display #frame7 #shipping_address,
-html body#checkout #grand .wrapper #show #display #frame7 #shipping_address {
-  min-width: 100%;
-  overflow: hidden;
+html body#checkout #grand #screen #show #display #frame7 .top.title h2,
+html body#checkout #grand .wrapper #show #display #frame7 .top.title h2 {
+  color: #ffffff;
+  margin: 10px 0 5px;
+  font-family: roboto slab;
+  font-size: 24px;
+  letter-spacing: 4px;
+  text-shadow: 3px 4px 0 rgba(1,1,1,0.1);
+  text-transform: uppercase;
+}
+html body#checkout #grand #screen #show #display #frame7 .detail,
+html body#checkout #grand .wrapper #show #display #frame7 .detail {
   width: 100%;
+  overflow: hidden;
+  height: 340px;
+  min-height: 340px;
+  background: url("../images/01_Checkout/big_roller.png") no-repeat scroll center center;
 }
-html body#checkout #grand #screen #show #display #frame7 #shipping_address .detail,
-html body#checkout #grand .wrapper #show #display #frame7 #shipping_address .detail {
-  width: 100%;
+html body#checkout #grand #screen #show #display #frame7 .detail .special.line,
+html body#checkout #grand .wrapper #show #display #frame7 .detail .special.line {
+  width: 490px;
+  margin: 0 auto;
   overflow: hidden;
 }
-html body#checkout #grand #screen #show #display #frame7 #shipping_address .detail .left-side,
-html body#checkout #grand .wrapper #show #display #frame7 #shipping_address .detail .left-side {
-  padding-right: 3%;
-}
-html body#checkout #grand #screen #show #display #frame7 #shipping_address .detail .right-side,
-html body#checkout #grand .wrapper #show #display #frame7 #shipping_address .detail .right-side {
-  padding-left: 3%;
-}
-html body#checkout #grand #screen #show #display #frame7 #shipping_address .detail .form-group,
-html body#checkout #grand .wrapper #show #display #frame7 #shipping_address .detail .form-group {
-  padding-bottom: 4px;
-}
-html body#checkout #grand #screen #show #display #frame7 #shipping_address .detail .form-group .form-control,
-html body#checkout #grand .wrapper #show #display #frame7 #shipping_address .detail .form-group .form-control {
-  border-radius: 3px;
-  color: #999;
+html body#checkout #grand #screen #show #display #frame7 .detail .l1 h3,
+html body#checkout #grand .wrapper #show #display #frame7 .detail .l1 h3 {
   font-family: raleway;
-  padding: 3px 12px;
-  border: 1px solid #FFF;
-  box-shadow: 2px 3px 0 rgba(1,1,1,0.15);
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e3413e;
+  margin: 25px 0 5px;
 }
-html body#checkout #grand #screen #show #display #frame7 #shipping_address .detail .col-xs-6,
-html body#checkout #grand .wrapper #show #display #frame7 #shipping_address .detail .col-xs-6 {
-  margin: 0 0 10px 0;
+html body#checkout #grand #screen #show #display #frame7 .detail .l2 h4,
+html body#checkout #grand .wrapper #show #display #frame7 .detail .l2 h4 {
+  font-family: roboto slab;
+  font-size: 15px;
+  margin: 0 0 10px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
 }
-html body#checkout #grand #screen #show #display #frame7 #shipping_address .detail .col-xs-12,
-html body#checkout #grand .wrapper #show #display #frame7 #shipping_address .detail .col-xs-12 {
-  padding: 0 5%;
-  margin: 0 0 12px 0;
+html body#checkout #grand #screen #show #display #frame7 .detail .l3 .amount,
+html body#checkout #grand .wrapper #show #display #frame7 .detail .l3 .amount {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 350px;
+  color: #222222;
+  font-family: roboto slab;
 }
-html body#checkout #grand #screen #show #display #frame7 #shipping_address .detail .bootstrap-select,
-html body#checkout #grand .wrapper #show #display #frame7 #shipping_address .detail .bootstrap-select {
-  border: 1px solid #fff;
-  background: #FFF;
-  border-radius: 3px;
-  color: #999;
-  padding: 3px 12px;
+html body#checkout #grand #screen #show #display #frame7 .detail .l3 .amount .currency,
+html body#checkout #grand .wrapper #show #display #frame7 .detail .l3 .amount .currency {
+  display: block;
+  float: left;
+  font-size: 50px;
+  font-weight: 800;
+  height: 125px;
+  line-height: 155%;
+  padding: 0 20px 0 35px;
+}
+html body#checkout #grand #screen #show #display #frame7 .detail .l3 .amount .big.number,
+html body#checkout #grand .wrapper #show #display #frame7 .detail .l3 .amount .big.number {
+  float: left;
+  font-size: 100px;
+  font-weight: 800;
+  display: block;
+  height: 125px;
+  line-height: 75%;
+}
+html body#checkout #grand #screen #show #display #frame7 .detail .l3 .amount .small.number,
+html body#checkout #grand .wrapper #show #display #frame7 .detail .l3 .amount .small.number {
+  border-bottom: 6px solid red;
+  display: block;
+  float: left;
+  font-size: 50px;
+  font-weight: 800;
+  height: 55px;
+  line-height: 80%;
+  margin: 0 0 0 20px;
+}
+html body#checkout #grand #screen #show #display #frame7 .detail .l4 p,
+html body#checkout #grand .wrapper #show #display #frame7 .detail .l4 p {
+  color: #666;
   font-family: raleway;
-  box-shadow: 2px 3px 0 rgba(1,1,1,0.15);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 8px 70px;
+  text-align: center;
 }
-html body#checkout #grand #screen #show #display #frame7 #shipping_address .detail .dropdown-toggle,
-html body#checkout #grand .wrapper #show #display #frame7 #shipping_address .detail .dropdown-toggle {
-  min-width: 240px;
-  width: 240px;
-  padding: 0 10px 0 0;
-}
-html body#checkout #grand #screen #show #display #frame7 #shipping_address .detail .btn-group.open,
-html body#checkout #grand #screen #show #display #frame7 #shipping_address .detail .dropdown-toggle,
-html body#checkout #grand .wrapper #show #display #frame7 #shipping_address .detail .btn-group.open,
-html body#checkout #grand .wrapper #show #display #frame7 #shipping_address .detail .dropdown-toggle {
-  box-shadow: none;
-}
-html body#checkout #grand #screen #show #display #frame7 #shipping_address .detail .dropdown-menu ul li a,
-html body#checkout #grand .wrapper #show #display #frame7 #shipping_address .detail .dropdown-menu ul li a {
-  outline: none;
-  color: #999 !important;
+html body#checkout #grand #screen #show #display #frame7 .detail .l5 a,
+html body#checkout #grand .wrapper #show #display #frame7 .detail .l5 a {
+  color: #e3413e;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
 }
 html body#checkout #grand #screen #show #display #frame7 .control,
 html body#checkout #grand .wrapper #show #display #frame7 .control {
   width: 100%;
   text-align: center;
+  padding: 0 0 10px;
 }
-html body#checkout #grand #screen #show #display #frame7 .control p,
-html body#checkout #grand .wrapper #show #display #frame7 .control p {
-  margin: 4% 0 0 0;
+html body#checkout #grand #screen #show #display #frame7 .control h3,
+html body#checkout #grand .wrapper #show #display #frame7 .control h3 {
+  margin: 10px 0 0 0;
   font-family: raleway;
   font-weight: 700;
-  color: #FFF;
+  color: #ffffff;
   letter-spacing: 2px;
   font-size: 15px;
+  text-transform: uppercase;
   text-shadow: 2px 3px 0 rgba(1,1,1,0.1);
 }
-html body#checkout #grand #screen #show #display #frame7 .control a.btn.border,
-html body#checkout #grand .wrapper #show #display #frame7 .control a.btn.border {
-  outline: none;
-  width: 89px;
-  max-width: 89px;
-  min-width: 89px;
-  height: 59px;
-  background: url("../images/01_Checkout/btn_down.png") no-repeat scroll center center;
+html body#checkout #grand #screen #show #display #frame7 .control ul.social.small.list,
+html body#checkout #grand .wrapper #show #display #frame7 .control ul.social.small.list {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 80px;
   display: block;
-  text-indent: 9999px;
-  margin: 6% auto 0;
+}
+html body#checkout #grand #screen #show #display #frame7 .control ul.social.small.list li,
+html body#checkout #grand .wrapper #show #display #frame7 .control ul.social.small.list li {
+  display: inline;
+}
+html body#checkout #grand #screen #show #display #frame7 .control ul.social.small.list li a,
+html body#checkout #grand .wrapper #show #display #frame7 .control ul.social.small.list li a {
+  margin: 15px 10px 0;
+  width: 50px;
+  background: none;
+}
+html body#checkout #grand #screen #show #display #frame7 .control a.red.big.btn,
+html body#checkout #grand .wrapper #show #display #frame7 .control a.red.big.btn {
+  background: #e3413e;
+  letter-spacing: 2px;
+  box-shadow: 3px 4px 0 rgba(1,1,1,0.15);
 }
 html body#checkout #grand #screen #scenes,
 html body#checkout #grand .wrapper #scenes {
@@ -1040,6 +1109,14 @@ html body#checkout #grand .wrapper #scenes #animation #hearts {
   right: 85px;
   background: url("../images/01_Checkout/ico_heart.png") no-repeat scroll bottom center;
 }
+html body#checkout #grand #screen #scenes #animation #crowd,
+html body#checkout #grand .wrapper #scenes #animation #crowd {
+  width: 521px;
+  height: 261px;
+  bottom: 0;
+  right: 0;
+  background: url("../images/01_Checkout/img_Crowd.png") no-repeat scroll bottom center;
+}
 html body#checkout #controller {
   height: 100%;
   position: absolute;
@@ -1063,6 +1140,7 @@ html body#checkout #controller #back {
   background: url("../images/01_Checkout/btn_back.png") no-repeat scroll bottom center;
 }
 html body#checkout #controller #back a {
+  outline: none;
   display: block;
   height: 51px !important;
   overflow: hidden;
@@ -1136,7 +1214,7 @@ html body#checkout #controller #scroller .sub .steps .item {
   width: 30px;
 }
 html body#checkout #controller #scroller .sub .steps .current {
-  color: #fff;
+  color: #ffffff;
   background: #e3413e;
 }
 html body#checkout #controller #scroller .sub .steps .active {
@@ -1164,7 +1242,7 @@ html body#checkout #login .fronted {
 html body#checkout #login .fronted .content.wrapper .top.title {
   width: 100%;
   text-align: center;
-  color: #FFF;
+  color: #ffffff;
   font-family: raleway;
 }
 html body#checkout #login .fronted .content.wrapper .top.title h1 {
@@ -1196,7 +1274,7 @@ html body#checkout #login .fronted .content.wrapper .detail #quick_login .line i
   border-color: -moz-use-text-color -moz-use-text-color #696d6f;
   border-style: none none solid;
   border-width: medium medium 1px;
-  color: #fff;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 100;
   margin: 2% auto 1%;
@@ -1205,23 +1283,23 @@ html body#checkout #login .fronted .content.wrapper .detail #quick_login .line i
   width: 100%;
 }
 html body#checkout #login .fronted .content.wrapper .detail #quick_login .line input::-webkit-input-placeholder {
-  color: #FFF;
+  color: #ffffff;
 }
 html body#checkout #login .fronted .content.wrapper .detail #quick_login .line input:-moz-placeholder {
-  color: #FFF;
+  color: #ffffff;
 }
 html body#checkout #login .fronted .content.wrapper .detail #quick_login .line input::-moz-placeholder {
-  color: #FFF;
+  color: #ffffff;
 }
 html body#checkout #login .fronted .content.wrapper .detail #quick_login .line input:-ms-input-placeholder {
-  color: #FFF;
+  color: #ffffff;
 }
 html body#checkout #login .fronted .content.wrapper .detail #quick_login .line input::placeholder {
-  color: #FFF;
+  color: #ffffff;
 }
 html body#checkout #login .fronted .content.wrapper .detail #quick_login .line a.forgot-password {
   bottom: 25px;
-  color: #999;
+  color: #999999;
   font-size: 12px;
   position: absolute;
   right: 0;
@@ -1243,7 +1321,7 @@ html body#checkout #login .fronted .content.wrapper .control .note.sub.text {
   padding: 15px 0 5px;
   text-align: center;
   width: 100%;
-  color: #FFF;
+  color: #ffffff;
   font-weight: 500;
 }
 html body#checkout #login .fronted .content.wrapper .control .note.sub.text a {
@@ -1259,6 +1337,19 @@ html body#checkout #login .fronted .content.wrapper .control .social.bar a {
   outline: medium none;
   width: 100px;
 }
+html body#checkout #login .fronted .close {
+  background: rgba(0,0,0,0) url("../images/01_Checkout/ico_cross.png") no-repeat scroll center center;
+  cursor: pointer;
+  display: block;
+  height: 34px;
+  opacity: 1;
+  position: absolute;
+  right: 30px;
+  text-indent: 9999px;
+  top: 30px;
+  width: 34px;
+  z-index: 9999;
+}
 html body#checkout #login .back.dark {
   position: absolute;
   top: 0;
@@ -1271,11 +1362,30 @@ html body#checkout #login .back.dark {
 html body#checkout #login.active {
   display: block;
 }
+html body#checkout #decos .obj {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  margin-left: -40px;
+}
+html body#checkout #decos .sun {
+  background: url("../images/01_Checkout/ico_sun.png") no-repeat scroll center center;
+}
+html body#checkout #decos .moon {
+  background: url("../images/01_Checkout/ico_moon.png") no-repeat scroll center center;
+}
+html body#checkout #decos .smile {
+  background: url("../images/01_Checkout/smile_sun.png") no-repeat scroll center center;
+}
 html body#checkout #background {
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: 1;
+  min-height: 1024px;
 }
 html body#checkout #background .scene {
   width: 100%;

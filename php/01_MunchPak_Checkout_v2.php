@@ -2,6 +2,9 @@
 
 <body class='checkout' id='checkout'>
 
+   <input id='save_step' type='hidden' value='step0' />
+
+
    <div class='wrapper' id='grand'>
 
       <div id='screen'>
@@ -34,7 +37,7 @@
                                  </h2>
 
 
-                                 <div class='snack-numbers'>
+                                 <div class='snack-numbers left-side'>
 
                                     <div class='col-snack-numbers'>
 
@@ -94,7 +97,7 @@
                                  </h2>
 
 
-                                 <div class='snack-numbers'>
+                                 <div class='snack-numbers right-side'>
 
                                     <div class='col-snack-numbers'>
 
@@ -145,7 +148,7 @@
 
                            <div class='control'>
 
-                              <a class='border btn next' href='#'> Next
+                              <a class='border btn next' id='button1' href='#'> Next
                               </a>
 
                            </div>
@@ -559,7 +562,7 @@ Snacks
                               </p>
 
 
-                              <a class='border btn down' href='#'> v
+                              <a class='border btn down' id='button2' href='#'> v
                               </a>
 
                            </div>
@@ -657,7 +660,7 @@ flavored walter
                               </p>
 
 
-                              <a class='border btn next' href='#'> Next
+                              <a class='border btn next' id='button3' href='#'> Next
                               </a>
 
                            </div>
@@ -669,7 +672,7 @@ flavored walter
                   </div>
 
 
-                  <div class='deep1 page' id='frame4'>
+                  <div class='deep1 page active' id='frame4'>
 
                      <div class='deep2'>
 
@@ -898,7 +901,7 @@ flavored walter
 
                            <div class='control'>
 
-                              <a class='border btn down' href='#'> v
+                              <a class='border btn down' id='button4' href='#'> v
                               </a>
 
                            </div>
@@ -1108,7 +1111,7 @@ flavored walter
 
                               <div class='control'>
 
-                                 <a class='border btn down' href='#'> v
+                                 <a class='border btn down' id='button5' href='#'> v
                                  </a>
 
                               </div>
@@ -1122,7 +1125,7 @@ flavored walter
                   </div>
 
 
-                  <div class='deep1 page active' id='frame6'>
+                  <div class='deep1 page' id='frame6'>
 
                      <div class='deep2'>
 
@@ -1341,7 +1344,7 @@ flavored walter
 
                               <div class='control'>
 
-                                 <a class='border complete' href='#'> Order Now
+                                 <a class='border complete' id='button6' href='#'> Order Now
                                  </a>
 
 
@@ -1476,7 +1479,7 @@ flavored walter
                               </ul>
 
 
-                              <a class='red big btn' href='#' target='_blank'> Visit our Shop
+                              <a class='red big btn' id='button7' href='#' target='_blank'> Visit our Shop
                               </a>
 
                            </div>
@@ -1512,15 +1515,15 @@ flavored walter
 
                <div id='decos'>
 
-                  <div class='scene s1 sun'>
+                  <div class='obj s1 sun'>
                   </div>
 
 
-                  <div class='scene s2 moon'>
+                  <div class='obj s2 moon'>
                   </div>
 
 
-                  <div class='scene s3 smeil'>
+                  <div class='obj s3 smile'>
                   </div>
 
                </div>
@@ -1537,6 +1540,10 @@ flavored walter
 
 
                   <div class='obj o3' id='hearts'>
+                  </div>
+
+
+                  <div class='obj o4' id='crowd'>
                   </div>
 
                </div>
@@ -1583,7 +1590,7 @@ flavored walter
 
                   <ul class='steps check'>
 
-                     <li class='item step1 active'>
+                     <li class='item step1 current'>
 
                         <a href='#1'> 1
                         </a>
@@ -1591,7 +1598,7 @@ flavored walter
                      </li>
 
 
-                     <li class='item step2 current'>
+                     <li class='item step2'>
 
                         <a href='#1'> 2
                         </a>
@@ -1699,6 +1706,10 @@ or just use your available accounts:
 
                </div>
 
+            </div>
+
+
+            <div class='close' id='close_login'> x
             </div>
 
          </div>

@@ -1,3 +1,7 @@
+@red: #e3413e;
+@white: #ffffff;
+@grey: #999999;
+@black: #222222;
 html{
    height:100%;
    body#checkout{
@@ -9,9 +13,11 @@ html{
          height: 100%;
          overflow: hidden;
          z-index:9;
+         min-height:1024px;
          #screen, .wrapper{
             max-width: 1230px;
             height:100%;
+            min-height:768px;
             margin:0 auto;
             width:1230px;
             position:relative;
@@ -31,11 +37,11 @@ html{
                      display: none;
                      .content{
                         .top.title{
-                           margin: 10% 0 4%;
+                           margin: 150px 0 4%;
                            text-align: center;
                            width: 100%;
                            h1{
-                              color: #fff;
+                              color: @white;
                               font-size: 45px;
                               font-weight: 900;
                               letter-spacing: 4px;
@@ -54,13 +60,24 @@ html{
                            margin:55px 0 0 0;
                         }
                         h2{
-                           color: #fff;
+                           color: @white;
                            font-size: 22px;
                            font-weight: 800;
                            letter-spacing: 3px;
                            text-align: center;
                            text-shadow: 2px 3px 0 rgba(1, 1, 1, 0.1);
                            text-transform: uppercase;
+                        }
+                        .left-side{
+                           .col-snack-numbers{
+                              float:left;
+                           }
+                        }
+                        .right-side{
+                           padding:0 25px 0 0;
+                           .col-snack-numbers{
+                              float:right;
+                           }
                         }
                         .snack-numbers{
                            .col-snack-numbers{
@@ -101,16 +118,16 @@ html{
                            }
                            .col-snack-numbers.active{
                               .buf{
-                                 background:#FFF;
+                                 background:@white;
                                  box-shadow: 4px 5px 0 rgba(1, 1, 1, 0.1);
-                                 color:#e3413e;
+                                 color:@red;
                                  .snack-total, .snack-text, .label-text{
-                                    color:#e3413e;
+                                    color:@red;
                                     text-shadow:none;
                                  }
                                  .label-text{
-                                    line-height: 60%;
-                                    padding: 60px 0 0;
+                                    line-height: 120%;
+                                    padding: 53px 0 0;
                                  }
                               }
                            }
@@ -124,7 +141,7 @@ html{
                            background:none;
                            border:2px solid rgba(255,255,255,0.25);
                            border-radius:4px;
-                           color:#FFF;
+                           color:@white;
                            margin:10% auto 0;
                         }
                      }
@@ -135,7 +152,7 @@ html{
                            background:rgba(0, 0, 0, 0) url("../images/01_Checkout/ico_info.png") no-repeat scroll 74.5% 5.5%;
                         }
                         p.min.text{
-                           color: #fff;
+                           color: @white;
                            font-size: 16px;
                            letter-spacing: 1px;
                            margin: 20px 0 5px;
@@ -211,17 +228,17 @@ html{
                                  right:0;
                                  background: url("../images/01_Checkout/ico_plus.png") no-repeat scroll center center;
                               }
-                           }
-                           li.item:hover{
-                              .cycle{
-                                 background:none;
-                                 box-shadow:none;
-                              }
-                              .text{
-                                 color: rgba(255,255,255,1);
-                              }
-                              a{
-                                 display:block
+                              &:hover{
+                                 .cycle{
+                                    background:none;
+                                    box-shadow:none;
+                                 }
+                                 .text{
+                                    color: rgba(255,255,255,1);
+                                 }
+                                 a{
+                                    display:block
+                                 }
                               }
                            }
                            li.item.plused{
@@ -240,7 +257,7 @@ html{
                               }
                               .cycle{
                                  border:none;
-                                 background:#e3413e;
+                                 background:@red;
                                  box-shadow: 2px 3px 0 rgba(1, 1, 1, 0.2);
                               }
                            }
@@ -253,7 +270,7 @@ html{
                            margin:4% 0 0 0;
                            font-family:raleway;
                            font-weight:700;
-                           color:#FFF;
+                           color:@white;
                            letter-spacing:1px;
                            font-size:15px;
                            text-shadow: 2px 3px 0 rgba(1, 1, 1, 0.1);
@@ -276,7 +293,7 @@ html{
                         h1{
                         }
                         p.min.text{
-                           color: #fff;
+                           color: @white;
                            font-size: 16px;
                            letter-spacing: 1px;
                            margin: 20px 0 5px;
@@ -293,7 +310,7 @@ html{
                               display:inline-block;
                               font-weight:800;
                               font-size:13px;
-                              color:#FFF;
+                              color:@white;
                               margin:16px;
                               letter-spacing: 1px;
                               text-transform:uppercase;
@@ -354,7 +371,7 @@ html{
                            margin:5% 0 0;
                            font-family:raleway;
                            font-weight:700;
-                           color:#FFF;
+                           color:@white;
                            letter-spacing:1px;
                            font-size:15px;
                            text-shadow: 2px 3px 0 rgba(1, 1, 1, 0.1);
@@ -364,33 +381,35 @@ html{
                            background:none;
                            border:2px solid rgba(255,255,255,0.25);
                            border-radius:4px;
-                           color:#FFF;
+                           color:@white;
                            margin:2.5% auto 0;
                         }
                      }
                   }
                   #frame4{
                      .top.title{
-                        margin: 10% 0 2.5%;
+                        margin: 150px 0 2%;
                         overflow: hidden;
                         text-align: center;
                         width: 100%;
                         h1{
                         }
                         p.min.text{
-                           color: #fff;
+                           color: @white;
                            font-size: 16px;
                            letter-spacing: 1px;
                            margin: 15px 0 5px;
                            #quicklogin{
-                              background: #e3413e none repeat scroll 0 0;
+                              background: @red none repeat scroll 0 0;
                               border-radius: 10px;
                               font-size: 15px;
                               margin: 0 0 0 3px;
-                              min-width: auto;
+                              min-width: 96px;
+                              max-width: 96px;
                               padding: 3px 15px;
+                              text-align:center;
                               text-transform: none;
-                              width: auto;
+                              width: 96px;
                            }
                         }
                      }
@@ -413,10 +432,10 @@ html{
                               padding-bottom:4px;
                               .form-control{
                                  border-radius:3px;
-                                 color:#999;
+                                 color:@grey;
                                  font-family:raleway;
                                  padding:3px 12px;
-                                 border:1px solid #FFF;
+                                 border:1px solid @white;
                                  box-shadow: 2px 3px 0 rgba(1, 1, 1, 0.15);
                               }
                            }
@@ -428,10 +447,10 @@ html{
                               margin:0 0 12px 0;
                            }
                            .bootstrap-select{
-                              border: 1px solid #fff;
-                              background:#FFF;
+                              border: 1px solid @white;
+                              background:@white;
                               border-radius:3px;
-                              color:#999;
+                              color:@grey;
                               padding:3px 12px;
                               font-family:raleway;
                               box-shadow: 2px 3px 0 rgba(1, 1, 1, 0.15);
@@ -455,7 +474,7 @@ html{
                            padding: 0 0 0 12px;
                            position: relative;
                            span{
-                              color:#FFF;
+                              color:@white;
                               float:left;
                               text-shadow: 1px 2px 0 rgba(1, 1, 1, 0.1);
                               text-transform:uppercase;
@@ -471,7 +490,7 @@ html{
                                  box-shadow: 1px 2px 0 rgba(1, 1, 1, 0.15);
                               }
                               input.checkbox:not(:checked){
-                                 background: #FFF;
+                                 background: @white;
                               }
                               input.checkbox:checked+label span {
                                  display:inline-block;
@@ -493,7 +512,7 @@ html{
                            margin:4% 0 0 0;
                            font-family:raleway;
                            font-weight:700;
-                           color:#FFF;
+                           color:@white;
                            letter-spacing:1px;
                            font-size:15px;
                            text-shadow: 2px 3px 0 rgba(1, 1, 1, 0.1);
@@ -513,7 +532,7 @@ html{
                   }
                   #frame5{
                      .top.title{
-                        margin: 10% 0 2.5%;
+                        margin: 150px 0 2%;
                         overflow: hidden;
                         text-align: center;
                         width: 100%;
@@ -535,10 +554,10 @@ html{
                               padding-bottom:4px;
                               .form-control{
                                  border-radius:3px;
-                                 color:#999;
+                                 color:@grey;
                                  font-family:raleway;
                                  padding:3px 12px;
-                                 border:1px solid #FFF;
+                                 border:1px solid @white;
                                  box-shadow: 2px 3px 0 rgba(1, 1, 1, 0.15);
                               }
                            }
@@ -550,10 +569,10 @@ html{
                               margin:0 0 12px 0;
                            }
                            .bootstrap-select{
-                              border: 1px solid #fff;
-                              background:#FFF;
+                              border: 1px solid @white;
+                              background:@white;
                               border-radius:3px;
-                              color:#999;
+                              color:@grey;
                               padding:3px 12px;
                               font-family:raleway;
                               box-shadow: 2px 3px 0 rgba(1, 1, 1, 0.15);
@@ -579,7 +598,7 @@ html{
                            margin:4% 0 0 0;
                            font-family:raleway;
                            font-weight:700;
-                           color:#FFF;
+                           color:@white;
                            letter-spacing:1px;
                            font-size:15px;
                            text-shadow: 2px 3px 0 rgba(1, 1, 1, 0.1);
@@ -593,13 +612,13 @@ html{
                            background: url("../images/01_Checkout/btn_down.png") no-repeat scroll center center;
                            display:block;
                            text-indent:9999px;
-                           margin:6% auto 0;
+                           margin:7% auto 0;
                         }
                      }
                   }
                   #frame6{
                      .top.title{
-                        margin: 10% 0 2.5%;
+                        margin: 150px 0 2%;
                         overflow: hidden;
                         text-align: center;
                         width: 100%;
@@ -622,7 +641,7 @@ html{
                               font-weight:900;
                               font-size:23px;
                               letter-spacing:2px;
-                              color:#FFF;
+                              color:@white;
                               text-shadow: 2px 3px 0 rgba(1, 1, 1, 0.1);
                            }
                            .left-side{
@@ -651,14 +670,14 @@ html{
                                        background: rgba(0, 0, 0, 0) url("../images/01_Checkout/front_truck.png") no-repeat scroll 11% 52%;
                                        padding: 18px 45px 20px 190px;
                                        .big.text{
-                                          color:#FFF;
+                                          color:@white;
                                           font-weight:900;
                                           text-transform:uppercase;
                                           font-size:15px;
                                           letter-spacing:3px;
                                        }
                                        .coin.text{
-                                          color: #fff;
+                                          color: @white;
                                           font-family:roboto slab;
                                           overflow: hidden;
                                           width: 100%;
@@ -679,7 +698,7 @@ html{
                                              padding: 0 0 0 8px;
                                           }
                                           .small.number{
-                                             border-bottom: 3px solid #e3413e;
+                                             border-bottom: 3px solid @red;
                                              display: block;
                                              float: left;
                                              font-size: 27px;
@@ -689,17 +708,17 @@ html{
                                           }
                                        }
                                        .min.text{
-                                          color:#FFF;
+                                          color:@white;
                                        }
                                     }
                                  }
                                  .input.object.fit.text{
                                     position:relative;
                                     input{
-                                       border: 1px solid #fff;
+                                       border: 1px solid @white;
                                        border-radius: 3px;
                                        box-shadow: 2px 3px 0 rgba(1, 1, 1, 0.15);
-                                       color: #999;
+                                       color: @grey;
                                        font-family: raleway;
                                        padding: 3px 12px;
                                        font-size: 16px;
@@ -723,10 +742,10 @@ html{
                               padding-bottom:4px;
                               .form-control{
                                  border-radius:3px;
-                                 color:#999;
+                                 color:@grey;
                                  font-family:raleway;
                                  padding:3px 12px;
-                                 border:1px solid #FFF;
+                                 border:1px solid @white;
                                  box-shadow: 2px 3px 0 rgba(1, 1, 1, 0.15);
                               }
                            }
@@ -753,15 +772,15 @@ html{
                            margin:1% 0 0 0;
                            font-family:raleway;
                            font-weight:700;
-                           color:#FFF;
+                           color:@white;
                            letter-spacing:1px;
                            font-size:15px;
                            text-shadow: 2px 3px 0 rgba(1, 1, 1, 0.1);
                         }
                         a.border.complete{
-                           border: 1px solid #fff;
+                           border: 1px solid @white;
                            border-radius: 5px;
-                           color: #fff;
+                           color: @white;
                            display: block;
                            font-family: roboto slab;
                            font-size: 20px;
@@ -780,87 +799,150 @@ html{
                   }
                   #frame7{
                      .top.title{
-                        margin: 10% 0 2.5%;
+                        margin: 150px 0 2%;
                         overflow: hidden;
                         text-align: center;
                         width: 100%;
+                        h2{
+                           color: @white;
+                           margin:10px 0 5px;
+                           font-family: roboto slab;
+                           font-size: 24px;
+                           letter-spacing: 4px;
+                           text-shadow: 3px 4px 0 rgba(1, 1, 1, 0.1);
+                           text-transform: uppercase;
+                        }
                      }
-                     #shipping_address{
-                        min-width: 100%;
-                        overflow: hidden;
-                        width: 100%;
-                        .detail{
-                           width:100%;
+                     .detail{
+                        width:100%;
+                        overflow:hidden;
+                        height:340px;
+                        min-height: 340px;
+                        background: url("../images/01_Checkout/big_roller.png") no-repeat scroll center center;
+                        .special.line{
+                           width:490px;
+                           margin:0 auto;
                            overflow:hidden;
-                           .left-side{
-                              padding-right:3%;
+                        }
+                        .l1{
+                           h3{
+                              font-family: raleway;
+                              font-size: 20px;
+                              font-weight: 900;
+                              letter-spacing: 3px;
+                              text-align: center;
+                              text-transform: uppercase;
+                              color:@red;
+                              margin:25px 0 5px;
                            }
-                           .right-side{
-                              padding-left:3%;
+                        }
+                        .l2{
+                           h4{
+                              font-family: roboto slab;
+                              font-size: 15px;
+                              margin:0 0 10px;
+                              font-weight: 600;
+                              text-align: center;
+                              text-transform: uppercase;
+                              color:@black;
                            }
-                           .form-group{
-                              padding-bottom:4px;
-                              .form-control{
-                                 border-radius:3px;
-                                 color:#999;
-                                 font-family:raleway;
-                                 padding:3px 12px;
-                                 border:1px solid #FFF;
-                                 box-shadow: 2px 3px 0 rgba(1, 1, 1, 0.15);
+                        }
+                        .l3{
+                           .amount{
+                              display: block;
+                              margin: 0 auto;
+                              text-align: center;
+                              width: 350px;
+                              color:@black;
+                              font-family:roboto slab;
+                              .currency{
+                                 display: block;
+                                 float: left;
+                                 font-size: 50px;
+                                 font-weight: 800;
+                                 height: 125px;
+                                 line-height: 155%;
+                                 padding: 0 20px 0 35px;
+                              }
+                              .big.number{
+                                 float:left;
+                                 font-size: 100px;
+                                 font-weight: 800;
+                                 display:block;
+                                 height:125px;
+                                 line-height: 75%;
+                              }
+                              .small.number{
+                                 border-bottom: 6px solid red;
+                                 display: block;
+                                 float: left;
+                                 font-size: 50px;
+                                 font-weight: 800;
+                                 height: 55px;
+                                 line-height: 80%;
+                                 margin: 0 0 0 20px;
                               }
                            }
-                           .col-xs-6{
-                              margin:0 0 10px 0;
+                        }
+                        .l4{
+                           p{
+                              color: #666;
+                              font-family: raleway;
+                              font-size: 15px;
+                              font-weight: 600;
+                              line-height: 150%;
+                              padding: 8px 70px;
+                              text-align: center;
                            }
-                           .col-xs-12{
-                              padding:0 5%;
-                              margin:0 0 12px 0;
-                           }
-                           .bootstrap-select{
-                              border: 1px solid #fff;
-                              background:#FFF;
-                              border-radius:3px;
-                              color:#999;
-                              padding:3px 12px;
-                              font-family:raleway;
-                              box-shadow: 2px 3px 0 rgba(1, 1, 1, 0.15);
-                           }
-                           .dropdown-toggle{
-                              min-width: 240px;
-                              width:240px;
-                              padding:0 10px 0 0;
-                           }
-                           .btn-group.open, .dropdown-toggle{
-                              box-shadow:none;
-                           }
-                           .dropdown-menu ul li a{
-                              outline:none;
-                              color:#999!important;
+                        }
+                        .l5{
+                           a{
+                              color: #e3413e;
+                              display: block;
+                              font-size: 18px;
+                              font-weight: 600;
+                              letter-spacing: 2px;
+                              padding: 15px 0;
+                              text-align: center;
+                              width: 100%;
                            }
                         }
                      }
                      .control{
                         width:100%;
                         text-align:center;
-                        p{
-                           margin:4% 0 0 0;
+                        padding:0 0 10px;
+                        h3{
+                           margin:10px 0 0 0;
                            font-family:raleway;
                            font-weight:700;
-                           color:#FFF;
+                           color:@white;
                            letter-spacing:2px;
                            font-size:15px;
+                           text-transform:uppercase;
                            text-shadow: 2px 3px 0 rgba(1, 1, 1, 0.1);
                         }
-                        a.btn.border{
-                           outline: none;
-                           width:89px;
-                           max-width:89px;
-                           min-width:89px;
-                           height:59px;
-                           background: url("../images/01_Checkout/btn_down.png") no-repeat scroll center center;
+                        ul.social.small.list{
+                           list-style:none;
+                           text-align:center;
+                           width:100%;
+                           padding:0;
+                           margin:0;
+                           height: 80px;
                            display:block;
-                           text-indent:9999px;
-                           margin:6% auto 0;
+                           li{
+                              display:inline;
+                              a{
+                                 margin:15px 10px 0;
+                                 width: 50px;
+                                 background:none;
+                              }
+                           }
+                        }
+                        a.red.big.btn{
+                           background:@red;
+                           letter-spacing:2px;
+                           box-shadow: 3px 4px 0 rgba(1, 1, 1, 0.15);
                         }
                      }
                   }
@@ -910,6 +992,13 @@ html{
                      right:85px;
                      background:url("../images/01_Checkout/ico_heart.png") no-repeat scroll bottom center;
                   }
+                  #crowd{
+                     width:521px;
+                     height:261px;
+                     bottom:0;
+                     right:0;
+                     background:url("../images/01_Checkout/img_Crowd.png") no-repeat scroll bottom center;
+                  }
                }
             }
          }
@@ -936,6 +1025,7 @@ html{
             height:51px;
             background: url("../images/01_Checkout/btn_back.png") no-repeat scroll bottom center;
             a {
+               outline:none;
                display: block;
                height: 51px !important;
                overflow: hidden;
@@ -974,7 +1064,7 @@ html{
                   margin: 7px 0 0 5px;
                }
                .small.number{
-                  border-bottom: 2px solid #e3413e;
+                  border-bottom: 2px solid @red;
                   display: block;
                   float: left;
                   font-size: 15px;
@@ -1007,8 +1097,8 @@ html{
                      width: 30px;
                   }
                   .current{
-                     color: #fff;
-                     background:#e3413e;
+                     color: @white;
+                     background:@red;
                   }
                   .active{
                      background:#2cc66d url("../images/01_Checkout/ico_check.png") no-repeat scroll center center;
@@ -1038,7 +1128,7 @@ html{
                .top.title{
                   width:100%;
                   text-align:center;
-                  color:#FFF;
+                  color:@white;
                      font-family:raleway;
                   h1{
                      font-size: 45px;
@@ -1067,7 +1157,7 @@ html{
                            border-color: -moz-use-text-color -moz-use-text-color #696d6f;
                            border-style: none none solid;
                            border-width: medium medium 1px;
-                           color: #fff;
+                           color: @white;
                            font-size: 20px;
                            font-weight: 100;
                            margin: 2% auto 1%;
@@ -1076,23 +1166,23 @@ html{
                            width: 100%;
                         }
                         input::-webkit-input-placeholder {
-                           color: #FFF;
+                           color: @white;
                         }
                         input:-moz-placeholder {
-                           color: #FFF;
+                           color: @white;
                         }
                         input::-moz-placeholder {
-                           color: #FFF;
+                           color: @white;
                         }
                         input:-ms-input-placeholder {
-                           color: #FFF;
+                           color: @white;
                         }
                         input::placeholder{
-                           color: #FFF;
+                           color: @white;
                         }
                         a.forgot-password{
                            bottom: 25px;
-                           color: #999;
+                           color: @grey;
                            font-size: 12px;
                            position: absolute;
                            right: 0;
@@ -1118,7 +1208,7 @@ html{
                      padding: 15px 0 5px;
                      text-align: center;
                      width: 100%;
-                     color:#FFF;
+                     color:@white;
                      font-weight:500;
                      a{
                         color:#4493cf;
@@ -1136,6 +1226,19 @@ html{
                   }
                }
             }
+            .close{
+               background: rgba(0, 0, 0, 0) url("../images/01_Checkout/ico_cross.png") no-repeat scroll center center;
+               cursor: pointer;
+               display: block;
+               height: 34px;
+               opacity: 1;
+               position: absolute;
+               right: 30px;
+               text-indent: 9999px;
+               top: 30px;
+               width: 34px;
+               z-index: 9999;
+            }
          }
          .back.dark{
             position:absolute;
@@ -1150,11 +1253,32 @@ html{
       #login.active{
          display:block;
       }
+      #decos{
+         .obj{
+            width:80px;
+            height:80px;
+            position:absolute;
+            left:50%;
+            top:50%;
+            opacity:0;
+            margin-left:-40px;
+         }
+         .sun{
+            background: url("../images/01_Checkout/ico_sun.png") no-repeat scroll center center;
+         }
+         .moon{
+            background: url("../images/01_Checkout/ico_moon.png") no-repeat scroll center center;
+         }
+         .smile{
+            background: url("../images/01_Checkout/smile_sun.png") no-repeat scroll center center;
+         }
+      }
       #background{
          height:100%;
          width:100%;
          position:absolute;
          z-index:1;
+         min-height: 1024px;
          .scene {
             width:100%;
             height:100%;
